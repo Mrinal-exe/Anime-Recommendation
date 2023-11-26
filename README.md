@@ -10,3 +10,5 @@ This is a simple anime recommendation system based on user input. The system use
 
 ```bash
 pip install pandas scikit-learn
+
+### Installation
