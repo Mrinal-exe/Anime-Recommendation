@@ -1,6 +1,5 @@
 # Anime-Recommendation
-This is a simple anime recommendation system based on user input. The system uses TF-IDF Vectorization and Cosine Similarity to find similar animes in a given dataset.
-
+This Python script implements a simple anime recommendation system that suggests similar animes based on user input. Leveraging TF-IDF Vectorization and Cosine Similarity, the system analyzes a dataset containing anime names, genres, and types. Users input their favorite anime, and the script identifies close matches using the difflib library. The recommendation algorithm calculates similarity scores and presents a list of animes ranked by their similarity to the user's input. The project employs pandas for data manipulation, scikit-learn for TF-IDF Vectorization, and difflib for finding close matches. Whether you're an anime enthusiast or a Python developer looking to explore recommendation systems, this project provides a simple yet effective example.
 ## Getting Started
 
 ### Prerequisites
