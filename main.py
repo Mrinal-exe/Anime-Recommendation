@@ -14,9 +14,9 @@ selected_columns = ['name', 'genre', 'type']
 for columns in selected_columns:
     anime_data[columns] = anime_data[columns].fillna('')
 
-combined_columns = anime_data['name']+' '+anime_data['genre']+' '+anime_data['type']
+needed_columns = anime_data['name']+' '+anime_data['genre']+' '+anime_data['type']
 
-columns_vector = vectorizer.fit_transform(combined_columns)
+columns_vector = vectorizer.fit_transform(needed_columns)
 
 similarity = cosine_similarity(columns_vector)
 
@@ -32,7 +32,7 @@ similarity_score = list(enumerate(similarity[anime_index]))
 
 sorted_similar_animes = sorted(similarity_score, key = lambda x:x[1], reverse = True)
 
-print('Animes suggested for you :  \n')
+print('Animes suggested for you : ')
 i=1
 for anime in sorted_similar_animes:
     index = anime[0]
